@@ -23,19 +23,28 @@
             <div class="nav-item"><a class="nav-link text-white" href="createproject.html">Submit</a></div>
         </nav>
     </header>
-    <main>
-        <h1>Login</h1>
-        <form action="">
-            <div>
-                <label for="email">Email</label>
-                <input type="email" name="email">
-            </div><br>
-            <div>
-                <label for="password">Password</label>
-                <input type="password" name="password">
+    <main class="container mt-5">
+        <div class="row">
+            <div class="col-lg-6 mx-auto">
+                <h1>Login</h1>
+                <form action="">
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" name="email">
+                    </div><br>
+                    <div class="form-group">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" name="password">
+                    </div>
+                    <input type="submit" class="btn btn-primary" value="Login">
+                </form>
             </div>
-            <input type="submit" value="Submit">
-        </form>
+        </div>
     </main>
+    <footer class="container mt-5">
+        <div class="card p-1">
+            <p class="mt-4 ml-auto">Project Explorer &copy; 2020-Edconnect</p>
+        </div>
+    </footer>
 </body>
 </html>
