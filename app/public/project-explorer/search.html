@@ -24,37 +24,59 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section class="container bg-light p-3">
             <h2>Search Project by</h2>
 
-            <form action="" name="searchForm">
-                <div>
+            <form action="" name="searchForm" class="form-row">
+                <div class="form-group col-6">
                     <input type="text" name="searchTerm" id="search" class="form-control" placeholder="Project Name, Authors, Abstract, Tags">
                 </div><br>
-                <div>
-                    <select name="searchType" id="searchType" class="form-control">
+                <div class="form-group col-3">
+                    <label for="" class="form-lable">sort by</label>
+                    <select name="searchType" id="searchType" class="form-control-lg">
                         <option value="Name">Name</option>
                         <option value="Authors"></option>
                         <option value="Abstract">Abstract</option>
                         <option value="Tags">Tags</option>
                     </select>
                 </div><br>
-                <button type="submit" class="btn btn-primary">search</button>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-lg btn-primary">Submit</button>
+                </div>
             </form>
         </section>
-        <section>
-            <h3>Project 1</h3>
-            <ul>
-                <li>Name: Project 1</li>
-                <li>Description: Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Provident praesentium animi suscipit ea pariatur quod maiores, mollitia voluptates nisi officia.
-                    Cum dolorum, saepe aliquid sint aperiam debitis natus. Laborum, corrupti.
-                </li>
-                <li>Program: Computer Science</li>
-                <li>Authors: John Doe, Jane Doe</li>
-                <li>Tags: #Asphyxia, #GSW</li>
-                <li>Year: 2018</li>
-            </ul>
+        <section class="container">
+            <div class="row">
+                <div class="col-4">
+                    <h3>Project 1</h3>
+                    <ul>
+                        <li>Name: Project 1</li>
+                        <li>Description: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Provident praesentium animi suscipit ea pariatur quod maiores, mollitia voluptates nisi officia.
+                            Cum dolorum, saepe aliquid sint aperiam debitis natus. Laborum, corrupti.
+                        </li>
+                        <li>Program: Computer Science</li>
+                        <li>Authors: John Doe, Jane Doe</li>
+                        <li>Tags: #Asphyxia, #GSW</li>
+                        <li>Year: 2018</li>
+                    </ul>
+                </div>
+
+                <div class="col-4">
+                    <h3>Project 2</h3>
+                    <ul>
+                        <li>Name: Project 2</li>
+                        <li>Description: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Provident praesentium animi suscipit ea pariatur quod maiores, mollitia voluptates nisi officia.
+                            Cum dolorum, saepe aliquid sint aperiam debitis natus. Laborum, corrupti.
+                        </li>
+                        <li>Program: Computer Science</li>
+                        <li>Authors: John Doe, Jane Doe</li>
+                        <li>Tags: #Asphyxia, #GSW</li>
+                        <li>Year: 2018</li>
+                    </ul>
+                </div>
+            </div>
         </section>
     </main>
 </body>
