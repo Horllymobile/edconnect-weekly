@@ -24,40 +24,57 @@
         </nav>
     </header>
     <main>
-        <section>
-            <h2>Project 1</h2>
-            <ul>
-                <li>Created by: John Doe</li>
-                <li>Date Created: 01/12/2020</li>
-                <li>Last Updated: 02/10/2022</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Edit Project</h2>
-            <form action="" name="editProject">
-                <div>
-                    <label for="name">Project Name</label>
-                    <input type="text" name="name" id="name">
-                </div><br>
-                <div>
-                    <label for="abstract">Project Abstract</label>
-                    <textarea name="abstract"></textarea>
-                </div><br>
-                <div>
-                    <label for="authors">Authors</label>
-                    <input type="text" name="authors" id="authors">
-                </div><br>
-                <div>
-                    <label for="tags">Tags</label>
-                    <input type="text" name="tags" id="tags">
-                </div><br>
-                <div>
-                    <label for="projectFile">Upload File</label>
-                    <input type="file" name="projectFile" id="projectFile">
-                </div><br>
-                <input type="submit" value="Submit">
-            </form>
-        </section>
+        <div class="container mt-3">
+            <section>
+                <h2>Project 1</h2>
+                <div class="row">
+                    <div class="col-3">Created by: John Doe</div>
+                    <div class="col-3">Date Created: 01/12/2020</div>
+                    <div class="col-3">Last Updated: 02/10/2022</div>
+                    <div class="col-3  d-flex justify-content-end"> <button class="btn btn-primary">View project</button> </div>
+                </div>
+            </section>
+            <div class="row">
+                <section class="col-6">
+                    <h2>Edit Project</h2>
+                    <form action="" name="editProject">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Project Name</label>
+                            <input type="text" name="name" class="form-control" id="name">
+                        </div><br>
+                        <div class="form-group">
+                            <label for="abstract" class="form-label">Project Abstract</label>
+                            <textarea name="abstract" class="form-control"></textarea>
+                        </div><br>
+                        <div class="form-group">
+                            <label for="authors" class="form-label">Authors</label>
+                            <input type="text" name="authors" class="form-control" id="authors">
+                        </div><br>
+                        <div class="form-group">
+                            <label for="tags" class="form-label">Tags</label>
+                            <input type="text" name="tags" class="form-control" id="tags">
+                        </div><br>
+                        <button type="submit" class="btn btn-primary">submit</button>
+                    </form>
+                </section>
+                <section class="col-6">
+                    <h2>Manage project files</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="projectFile" class="form-label">Upload File</label>
+                            <input type="file" name="projectFile" class="form-control-file" id="projectFile">
+                        </div><br>
+                    </form>
+
+                    <div class="card">
+                        <div class="card-header">Project files</div>
+                        <div class="card-body">
+                            <div class="card-text text-center">No file's uploaded yet</div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
     </main>
 </body>
 </html>
